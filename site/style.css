@@ -1,0 +1,19 @@
+.container {
+  /*max-width: 1124px;*/
+}
+
+.header {
+  max-width: 700px;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.sidebar {
+  position: absolute;
+}
+
+.cityselect label {
+  padding-right: 10px;
+}
