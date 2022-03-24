@@ -113,14 +113,14 @@ def rank_cities(cities):
 
 
 def create_city_names_json(city_names):
-    with open(f"cities.json", "w") as f:
+    with open(f"../site/city_list.js", "w") as f:
         city_names = sorted(city_names)
-        f.write(json.dumps(city_names))
+        f.write("const cities = " + json.dumps(city_names))
 
 
 def create_ranked_city_json(city, city_data, rankings):
     print(f"Creating ranked city json for {city}...")
-    with open(f"ranked_city_data/{city}.json", "w") as f:
+    with open(f"../site/data/{city}.json", "w") as f:
         f.write(json.dumps(city_data))
 
 
